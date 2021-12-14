@@ -1,0 +1,39 @@
+<html>
+ <head>
+   <title> Form Letter Generator </title>
+ </head>
+
+ <body>
+   <h2>Form Letter Generator</h2>
+   <p>
+     Enter recipient's name: 
+     		<input type="text" id="recipientBox" size=20 value=""> <br>
+     Enter activity: 
+     		<input type="text" id="activityBox" size=20 value=""> <br>
+     Enter date: 
+	  		<input type="text" id="dateBox" size=20 value=""> <br>
+	  Enter time:
+	  		<input type="text" id="timeBox" size 20 value="">
+   </p>
+     <input type="button" value="Click for Form Letter"
+            onclick="dog = document.getElementById('recipientBox').value;
+							crystals = document.getElementById('activityBox').value;
+							math = document.getElementById('dateBox').value;
+							lance = document.getElementById('timeBox').value;
+								document.getElementById('outputDiv').innerHTML=
+                       '<p>Dear ' + dog + 
+                       ',</p> Just a reminder that ' +
+                       crystals +
+                       ', is coming up on ' +
+                       math + 
+                       '. <br> Your understanding of the Material from Chapters 4,5,8 and 10 will be tested in ' + 
+                       crystals + 
+                       '. <br> Make sure to reserve by ' + 
+                       lance + 
+							  ', on ' +
+							  math +
+                       '<p style=\'text-align:left\'> Blessings, <br> Lance Fernandez </p>';">
+   <hr>
+   <div id="outputDiv"></div>
+ </body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<!-- swapImages.html                               Dr. O'C -->
+<!-- Web page that swaps two images at the click of a button. -->
+<!-- ======================================================== -->
+
+<html>
+ <head>
+   <title>Rotating Images</title>
+ </head>
+
+ <body>
+  <div style="text-align:center">
+  <h2>Rotating Images</h2>
+  <p>
+   <img id="leftImg" src="../Lab 8/happy.gif">
+   <img id="rightImg" src="../Lab 8/sad.gif">
+	<img id="centerImg" src="../Lab 8/surprised.gif">
+  </p>
+  <input type="button" value="Rotate Right"
+      onclick="
+              saved=document.getElementById('leftImg').src;
+              document.getElementById('leftImg').src= document.getElementById('centerImg').src;
+				  document.getElementById('centerImg').src= document.getElementById('rightImg').src;
+              document.getElementById('rightImg').src=saved;">
+				  
+	<input type="button" value="Rotate Left"
+      onclick="
+              saved=document.getElementById('leftImg').src;
+              document.getElementById('leftImg').src= document.getElementById('rightImg').src;
+				  document.getElementById('rightImg').src= document.getElementById('centerImg').src;
+              document.getElementById('centerImg').src=saved;">
+   </div>
+ </body>
+</html>
